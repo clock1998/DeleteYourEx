@@ -1,0 +1,14 @@
+{
+  "name": "eleproject",
+  "version": "1.0.0",
+  "description": "GUI for DeleteYourEx",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Linyi Jiang",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  }
+}
