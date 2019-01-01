@@ -4,12 +4,18 @@ client.connect("tcp://127.0.0.1:4242")
 
 let formula = document.querySelector('#formula')
 let result = document.querySelector('#result')
-formula.addEventListener('input', () => {
+let calculate = document.querySelector('#calculate')
+let photos = document.querySelector('#photos')
+let uploadImage = document.querySelector('uploadImage')
+
+calculate.addEventListener('click',() => {
+  console.log(photos.value)
   client.invoke("calc", formula.value, (error, res) => {
     if(error) {
       console.error(error)
     } else {
-      result.textContent = res
+      result.textContent = res + photos.value
+      uploadImage.src = URL.createObjectURL(photos.value)
     }
   })
 })
