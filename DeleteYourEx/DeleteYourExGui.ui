@@ -149,6 +149,7 @@
     </property>
     <addaction name="actionOpen_Folder"/>
     <addaction name="actionOpen_Files"/>
+    <addaction name="actionLoad_Target"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -161,6 +162,11 @@
   <action name="actionOpen_Files">
    <property name="text">
     <string>Open &amp;Files</string>
+   </property>
+  </action>
+  <action name="actionLoad_Target">
+   <property name="text">
+    <string>Load Target</string>
    </property>
   </action>
  </widget>
