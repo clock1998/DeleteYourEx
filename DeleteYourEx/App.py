@@ -1,6 +1,8 @@
 import sys
 import os
-from PyQt5.QtWidgets import QMainWindow, QApplication
+import ntpath
+from PyQt5.QtCore import QSize
+from PyQt5.QtWidgets import QMainWindow, QApplication, QListWidgetItem
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5 import QtCore
 from PyQt5 import QtGui
@@ -35,8 +37,17 @@ class MyApp(QMainWindow, Ui_MainWindow): #gui class
         options |= QFileDialog.DontUseNativeDialog
         files, _ = QFileDialog.getOpenFileNames(self, "Select File", "",
                                                 "Images Files (*.png *.xpm *.jpg)", options=options)
+
         if files:
             unknown_images = files
+            self.ui.pendingList.setIconSize(QSize(100, 100))
+            self.ui.pendingList.clear()
+
+            for i in files:
+                item = QListWidgetItem(ntpath.basename(i))
+                item.setIcon(QIcon(i))
+                item.setSizeHint(QSize(100, 100))
+                self.ui.pendingList.addItem(item)
             print(unknown_images)
 
     def openFileNameDialog(self):
