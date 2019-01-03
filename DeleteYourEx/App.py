@@ -8,18 +8,18 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
-path = os.path.dirname(__file__) #uic paths from itself, not the active dir, so path needed
-qtCreatorFile = "/DeleteYourExGui.ui" #Ui file name, from QtDesigner, assumes in same folder as this .py
+path = os.path.dirname(__file__)  # uic paths from itself, not the active dir, so path needed
+qtCreatorFile = "/DeleteYourExGui.ui"  # Ui file name, from QtDesigner, assumes in same folder as this .py
 
-Ui_MainWindow, QtBaseClass = uic.loadUiType(path + qtCreatorFile) #process through pyuic
+Ui_MainWindow, QtBaseClass = uic.loadUiType(path + qtCreatorFile)  # process through pyuic
 
 
-class MyApp(QMainWindow, Ui_MainWindow): #gui class
+class MyApp(QMainWindow, Ui_MainWindow):  # gui class
     target_image = ""
     unknown_images = []
 
     def __init__(self):
-        #The following sets up the gui via Qt
+        # The following sets up the gui via Qt
         super(MyApp, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -27,7 +27,7 @@ class MyApp(QMainWindow, Ui_MainWindow): #gui class
         self.ui.actionOpen_Folder.triggered.connect(self.openFolderDialog)
         self.ui.actionOpen_Files.triggered.connect(self.openFileNamesDialog)
         self.ui.actionLoad_Target.triggered.connect(self.openFileNameDialog)
-
+        self.ui.pendingList.itemClicked.connect(self.printSelectedImagePath)
         #set up callbacks
 
     def openFileNamesDialog(self):
@@ -43,12 +43,12 @@ class MyApp(QMainWindow, Ui_MainWindow): #gui class
             self.ui.pendingList.setIconSize(QSize(100, 100))
             self.ui.pendingList.clear()
 
-            for i in files:
-                item = QListWidgetItem(ntpath.basename(i))
+            for i in unknown_images:
+                item = QListWidgetItem()
+                item.setText(ntpath.basename(i))
                 item.setIcon(QIcon(i))
                 item.setSizeHint(QSize(100, 100))
                 self.ui.pendingList.addItem(item)
-            print(unknown_images)
 
     def openFileNameDialog(self):
         global target_image
@@ -68,9 +68,15 @@ class MyApp(QMainWindow, Ui_MainWindow): #gui class
         print(folder_path)
         return folder_path
 
+    def printSelectedImagePath(self):
+        path = unknown_images[self.ui.pendingList.currentRow()]
+        pixmap = QtGui.QPixmap(path).scaled(300, 400, aspectRatioMode=QtCore.Qt.KeepAspectRatio,
+                                            transformMode=QtCore.Qt.SmoothTransformation)
+        self.ui.currentImage.setPixmap(pixmap)
+
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv) #instantiate a QtGui (holder for the app)
+    app = QApplication(sys.argv)  # instantiate a QtGui (holder for the app)
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
