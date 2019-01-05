@@ -8,8 +8,6 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
-from os import listdir
-from os.path import isfile, join
 
 path = os.path.dirname(__file__)  # uic paths from itself, not the active dir, so path needed
 qtCreatorFile = "/DeleteYourExGui.ui"  # Ui file name, from QtDesigner, assumes in same folder as this .py
