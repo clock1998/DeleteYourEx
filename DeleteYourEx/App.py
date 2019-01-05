@@ -8,6 +8,9 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
+from os import listdir
+from os.path import isfile, join
+
 path = os.path.dirname(__file__)  # uic paths from itself, not the active dir, so path needed
 qtCreatorFile = "/DeleteYourExGui.ui"  # Ui file name, from QtDesigner, assumes in same folder as this .py
 
@@ -31,7 +34,6 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
         #set up callbacks
 
     def openFileNamesDialog(self):
-        global unknown_images
         options = QFileDialog.Options()
 
         options |= QFileDialog.DontUseNativeDialog
@@ -39,7 +41,7 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
                                                 "Images Files (*.png *.xpm *.jpg)", options=options)
 
         if files:
-            unknown_images = files
+            self.set_unknown_images(files)
             self.ui.pendingList.setIconSize(QSize(100, 100))
             self.ui.pendingList.clear()
 
@@ -64,15 +66,31 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
             self.ui.targetFace.setPixmap(pixmap)
 
     def openFolderDialog(self):
+        self.set_unknown_images([])
         folder_path = str(QFileDialog.getExistingDirectory(self, "Select Directory"))
-        print(folder_path)
-        return folder_path
+        for file in os.listdir(folder_path):
+            if file.endswith(".jpg") or file.endswith(".png") or file.endswith(".xpm"):
+                unknown_images.append(os.path.join(folder_path, file))
+
+        self.ui.pendingList.setIconSize(QSize(100, 100))
+        self.ui.pendingList.clear()
+
+        for i in unknown_images:
+            item = QListWidgetItem()
+            item.setText(ntpath.basename(i))
+            item.setIcon(QIcon(i))
+            item.setSizeHint(QSize(100, 100))
+            self.ui.pendingList.addItem(item)
 
     def printSelectedImagePath(self):
         path = unknown_images[self.ui.pendingList.currentRow()]
         pixmap = QtGui.QPixmap(path).scaled(300, 400, aspectRatioMode=QtCore.Qt.KeepAspectRatio,
                                             transformMode=QtCore.Qt.SmoothTransformation)
         self.ui.currentImage.setPixmap(pixmap)
+
+    def set_unknown_images(self, images):
+        global unknown_images
+        unknown_images = images
 
 
 if __name__ == "__main__":
