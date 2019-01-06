@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeleteYourEx.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteYourEx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteYourExGui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteYourExGui.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,44 +71,45 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="py" value="3493" />
-          <entry key="txt" value="282" />
+          <entry key="py" value="3603" />
+          <entry key="txt" value="374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="283" />
-          <entry key="Python" value="3493" />
+          <entry key="PLAIN_TEXT" value="375" />
+          <entry key="Python" value="3603" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="477">
+              <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1546749243951" expanded="true" signature="1968:1973" ph="..." />
-                <marker date="1546749243951" expanded="true" signature="3103:3104" ph="..." />
+                <marker date="1546749918134" expanded="true" signature="1968:1973" ph="..." />
+                <marker date="1546749918134" expanded="true" signature="3103:3104" ph="..." />
+                <marker date="1546749918134" expanded="true" signature="3277:3278" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1302">
-              <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+            <state relative-caret-position="450">
+              <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1546746931937" expanded="true" signature="3440:4333" ph="..." />
-                <marker date="1546746931937" expanded="true" signature="3775:4231" ph="..." />
-                <marker date="1546746931937" expanded="true" signature="4268:4277" ph="..." />
+                <marker date="1546750097127" expanded="true" signature="3481:4544" ph="..." />
+                <marker date="1546750097127" expanded="true" signature="4349:4442" ph="..." />
+                <marker date="1546750097127" expanded="true" signature="4479:4488" ph="..." />
               </folding>
             </state>
           </provider>
@@ -151,8 +151,8 @@
         <option value="$PROJECT_DIR$/api.py" />
         <option value="$PROJECT_DIR$/GUItest.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
-        <option value="$PROJECT_DIR$/App.py" />
         <option value="$PROJECT_DIR$/DeleteYourEx.py" />
+        <option value="$PROJECT_DIR$/App.py" />
       </list>
     </option>
   </component>
@@ -339,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546711174594</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Image list can be filtered. Face recognition initial complete.">
+      <created>1546749472364</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546749472364</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -390,7 +397,8 @@
     <MESSAGE value="Current Image can be displayed" />
     <MESSAGE value="Folder can be loaded" />
     <MESSAGE value="Start implementing face recognition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start implementing face recognition" />
+    <MESSAGE value="Image list can be filtered. Face recognition initial complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="Image list can be filtered. Face recognition initial complete." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/PyQt5/__init__.py">
@@ -438,27 +446,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.py">
+    <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+        <state relative-caret-position="477">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1546746931937" expanded="true" signature="3440:4333" ph="..." />
-            <marker date="1546746931937" expanded="true" signature="3775:4231" ph="..." />
-            <marker date="1546746931937" expanded="true" signature="4268:4277" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1546749918134" expanded="true" signature="1968:1973" ph="..." />
+            <marker date="1546749918134" expanded="true" signature="3103:3104" ph="..." />
+            <marker date="1546749918134" expanded="true" signature="3277:3278" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
+    <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        <state relative-caret-position="450">
+          <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1546749243951" expanded="true" signature="1968:1973" ph="..." />
-            <marker date="1546749243951" expanded="true" signature="3103:3104" ph="..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1546750097127" expanded="true" signature="3481:4544" ph="..." />
+            <marker date="1546750097127" expanded="true" signature="4349:4442" ph="..." />
+            <marker date="1546750097127" expanded="true" signature="4479:4488" ph="..." />
           </folding>
         </state>
       </provider>

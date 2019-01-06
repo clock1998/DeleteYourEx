@@ -70,3 +70,11 @@ def remove_images_without_target_face(unknown_images_path, target_face_path):
 def get_target_face_encodings(image_path):
     target_image = face_recognition.load_image_file(image_path)
     return face_recognition.face_encodings(target_image)[0]
+
+
+def delete_images(images):
+    for i in images:
+        if os.path.exists(i):
+            os.remove(i)
+        else:
+            print("The file does not exist")
