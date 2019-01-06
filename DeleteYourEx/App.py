@@ -33,6 +33,7 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
 
         self.ui.processButton.clicked.connect(self.process_pending_list)
         self.ui.deleteButton.clicked.connect(self.delete_images)
+        self.ui.removeButton.clicked.connect(self.remove_image)
         #set up callbacks
 
     def openFileNamesDialog(self):
@@ -105,6 +106,11 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
     def delete_images(self):
         DeleteYourEx.delete_images(unknown_images)
         self.ui.pendingList.clear()
+
+    def remove_image(self):
+        del unknown_images[self.ui.pendingList.currentRow()]
+        self.ui.pendingList.takeItem(self.ui.pendingList.currentRow())
+        self.ui.currentImage.clear()
 
     def set_unknown_images(self, images):
         global unknown_images
