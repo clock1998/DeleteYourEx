@@ -1,6 +1,8 @@
 import sys
 import os
 import ntpath
+import DeleteYourEx
+import face_recognition
 from PyQt5.QtCore import QSize
 from PyQt5.QtWidgets import QMainWindow, QApplication, QListWidgetItem
 from PyQt5.QtGui import QIcon, QPixmap
@@ -29,6 +31,8 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
         self.ui.actionOpen_Files.triggered.connect(self.openFileNamesDialog)
         self.ui.actionLoad_Target.triggered.connect(self.openFileNameDialog)
         self.ui.pendingList.itemClicked.connect(self.printSelectedImagePath)
+
+        self.ui.processButton.clicked.connect(self.process_pending_list)
         #set up callbacks
 
     def openFileNamesDialog(self):
@@ -85,6 +89,18 @@ class MyApp(QMainWindow, Ui_MainWindow):  # gui class
         pixmap = QtGui.QPixmap(path).scaled(300, 400, aspectRatioMode=QtCore.Qt.KeepAspectRatio,
                                             transformMode=QtCore.Qt.SmoothTransformation)
         self.ui.currentImage.setPixmap(pixmap)
+
+    def process_pending_list(self):
+        processed_image_list = DeleteYourEx.remove_images_without_target_face(unknown_images, target_image)
+        self.ui.pendingList.setIconSize(QSize(100, 100))
+        self.ui.pendingList.clear()
+
+        for i in processed_image_list:
+            item = QListWidgetItem()
+            item.setText(ntpath.basename(i))
+            item.setIcon(QIcon(i))
+            item.setSizeHint(QSize(100, 100))
+            self.ui.pendingList.addItem(item)
 
     def set_unknown_images(self, images):
         global unknown_images

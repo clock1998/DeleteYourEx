@@ -4,6 +4,8 @@
     <list default="true" id="f099a33c-cd33-46ad-b8c9-83348632399d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteYourEx.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteYourEx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteYourExGui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteYourExGui.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,53 +61,55 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="10" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="10" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="py" value="2076" />
-          <entry key="txt" value="210" />
+          <entry key="py" value="3493" />
+          <entry key="txt" value="282" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="211" />
-          <entry key="Python" value="2076" />
+          <entry key="PLAIN_TEXT" value="283" />
+          <entry key="Python" value="3493" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="177">
+              <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1544598425813" expanded="true" signature="1517:1522" ph="..." />
-                <marker date="1544598425813" expanded="true" signature="1686:1687" ph="..." />
+                <marker date="1546749243951" expanded="true" signature="1968:1973" ph="..." />
+                <marker date="1546749243951" expanded="true" signature="3103:3104" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="1302">
+              <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1546711064187" expanded="true" signature="3378:3784" ph="..." />
+                <marker date="1546746931937" expanded="true" signature="3440:4333" ph="..." />
+                <marker date="1546746931937" expanded="true" signature="3775:4231" ph="..." />
+                <marker date="1546746931937" expanded="true" signature="4268:4277" ph="..." />
               </folding>
             </state>
           </provider>
@@ -145,10 +149,10 @@
         <option value="$PROJECT_DIR$/cal.py" />
         <option value="$PROJECT_DIR$/calc.py" />
         <option value="$PROJECT_DIR$/api.py" />
-        <option value="$PROJECT_DIR$/DeleteYourEx.py" />
         <option value="$PROJECT_DIR$/GUItest.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/App.py" />
+        <option value="$PROJECT_DIR$/DeleteYourEx.py" />
       </list>
     </option>
   </component>
@@ -321,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546535519429</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Folder can be loaded">
+      <created>1546711094574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546711094574</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Start implementing face recognition">
+      <created>1546711174594</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546711174594</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -342,14 +360,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30473047" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920928" visible="true" weight="0.30473047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329602" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49920928" weight="0.21782178" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007907" side_tool="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007907" side_tool="true" weight="0.30473047" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49973643" weight="0.3278328" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -370,16 +388,11 @@
     <MESSAGE value="Can show target image in a label" />
     <MESSAGE value="Imported images can be seen as a list" />
     <MESSAGE value="Current Image can be displayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Current Image can be displayed" />
+    <MESSAGE value="Folder can be loaded" />
+    <MESSAGE value="Start implementing face recognition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start implementing face recognition" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/PyQt5/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -397,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUItest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -418,25 +424,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
+    <entry file="file://$PROJECT_DIR$/calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1544598425813" expanded="true" signature="1517:1522" ph="..." />
-            <marker date="1544598425813" expanded="true" signature="1686:1687" ph="..." />
-          </folding>
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="1302">
+          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1546711064187" expanded="true" signature="3378:3784" ph="..." />
+            <marker date="1546746931937" expanded="true" signature="3440:4333" ph="..." />
+            <marker date="1546746931937" expanded="true" signature="3775:4231" ph="..." />
+            <marker date="1546746931937" expanded="true" signature="4268:4277" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1546749243951" expanded="true" signature="1968:1973" ph="..." />
+            <marker date="1546749243951" expanded="true" signature="3103:3104" ph="..." />
           </folding>
         </state>
       </provider>
