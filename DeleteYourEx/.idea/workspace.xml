@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f099a33c-cd33-46ad-b8c9-83348632399d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteYourEx.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteYourEx.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,12 +48,13 @@
     <session id="-1704331789">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -71,12 +71,12 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="py" value="4062" />
-          <entry key="txt" value="465" />
+          <entry key="txt" value="523" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="466" />
+          <entry key="PLAIN_TEXT" value="524" />
           <entry key="Python" value="4062" />
         </counts>
       </usages-collector>
@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            <state relative-caret-position="705">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1546914181947" expanded="true" signature="635:640" ph="..." />
@@ -103,13 +103,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+            <state relative-caret-position="207">
+              <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1546914999608" expanded="true" signature="3545:4806" ph="..." />
-                <marker date="1546914999608" expanded="true" signature="4529:4704" ph="..." />
-                <marker date="1546914999608" expanded="true" signature="4741:4750" ph="..." />
               </folding>
             </state>
           </provider>
@@ -224,6 +221,9 @@
       <module name="DeleteYourEx" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546751875663</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finish Multiprocessing for filter out images">
+      <created>1546919219360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1546919219361</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -373,20 +380,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1039" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1035" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17870322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17870322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920928" visible="true" weight="0.30473047" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920928" weight="0.30473047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329602" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49920928" weight="0.21782178" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007907" side_tool="true" weight="0.30473047" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49973643" weight="0.3278328" />
@@ -394,6 +400,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -414,7 +446,8 @@
     <MESSAGE value="Image list can be filtered. Face recognition initial complete." />
     <MESSAGE value="Finish delete function." />
     <MESSAGE value="Finish the function of removing image from the list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish the function of removing image from the list." />
+    <MESSAGE value="Finish Multiprocessing for filter out images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Multiprocessing for filter out images" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/PyQt5/__init__.py">
@@ -434,38 +467,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUItest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUItest.py" />
+    <entry file="file://$PROJECT_DIR$/GUI.py" />
+    <entry file="file://$PROJECT_DIR$/calc.py" />
+    <entry file="file://$PROJECT_DIR$/api.py" />
     <entry file="file://$PROJECT_DIR$/DeleteYourEx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="705">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1546914181947" expanded="true" signature="635:640" ph="..." />
@@ -478,13 +487,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+        <state relative-caret-position="207">
+          <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1546914999608" expanded="true" signature="3545:4806" ph="..." />
-            <marker date="1546914999608" expanded="true" signature="4529:4704" ph="..." />
-            <marker date="1546914999608" expanded="true" signature="4741:4750" ph="..." />
           </folding>
         </state>
       </provider>
